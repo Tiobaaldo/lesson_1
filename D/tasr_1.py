@@ -1,0 +1,13 @@
+duration = int(input('Введите колличество секунд'))
+days = duration // (60 * 60 * 24)
+hours = (duration - days * (60 * 60 * 24)) // (60 * 60)
+minutes = (duration - days * (60 * 60 * 24) - hours * (60 * 60)) // 60
+seconds = duration - days * (60 * 60 * 24) - hours * (60 * 60) - minutes * 60
+print(days, 'дн', hours, 'час', minutes, 'мин', seconds, 'сек')
+
+
+
+
+
+
+
